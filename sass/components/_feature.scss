@@ -1,0 +1,32 @@
+.feature__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__item {
+    width: 270px;
+}
+
+.feature__icon-wrapper {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $bgr-primary-color;
+    border-radius: 4px;
+}
+
+.feature__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature__desc {
+    font-size: 14px;
+    line-height: 1.71;
+}

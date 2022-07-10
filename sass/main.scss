@@ -1,0 +1,29 @@
+// Utils
+@import './utils/vars';
+@import './utils/mixin';
+@import './utils/vusually-hidden';
+
+// Base styles
+@import './base/reset';
+@import './base/global';
+
+// Components
+// Header
+@import './components/page-header';
+
+// Main Studio
+@import './components/hero';
+@import './components/feature';
+@import './components/we-do';
+@import './components/our-team';
+@import './components/client';
+
+// Modal window
+@import './components/modal';
+@import './components/form-order';
+
+// Main Portfolio
+@import './components/portfolio';
+
+// Footer
+@import './components/page-footer';

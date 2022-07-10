@@ -1,0 +1,148 @@
+/* Footer */
+/* Address wrapper*/
+.page-footer {
+    padding: 60px 0;
+    background-color: $bgr-secondary-color;
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer__address-wrapper {
+    margin-right: 70px;
+}
+
+.logo--footer {
+    color: $white-color;
+}
+
+.address__list {
+    margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $address-color;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address__link--location {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white-color;
+}
+
+/* Social wrapper */
+.page-footer__social-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.page-footer__social {
+    fill: $white-color;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+/* Newsletter wrapper */
+.page-footer__newsletter-wrapper {
+    margin-left: auto;
+}
+
+.newsletter__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.newsletter__form {
+    display: flex;
+}
+
+.newsletter__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $bgr-secondary-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.newsletter__btn {
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $white-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.newsletter__icon-btn {
+    margin-left: 10px;
+    fill: $white-color;
+}

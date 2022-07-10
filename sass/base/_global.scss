@@ -1,0 +1,28 @@
+// Global styles
+body {
+    background-color: $white-color;
+    color: $desc-color;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h2,
+h3 {
+    color: $header-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
