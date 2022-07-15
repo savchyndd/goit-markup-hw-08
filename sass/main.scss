@@ -2,6 +2,7 @@
 @import './utils/vars';
 @import './utils/mixin';
 @import './utils/vusually-hidden';
+@import './utils/breakpoint';
 
 // Base styles
 @import './base/reset';
@@ -13,17 +14,17 @@
 
 // Main Studio
 @import './components/hero';
-@import './components/feature';
-@import './components/we-do';
-@import './components/our-team';
-@import './components/client';
+// @import './components/feature';
+// @import './components/we-do';
+// @import './components/our-team';
+// @import './components/client';
 
-// Modal window
-@import './components/modal';
-@import './components/form-order';
+// // Modal window
+// @import './components/modal';
+// @import './components/form-order';
 
-// Main Portfolio
-@import './components/portfolio';
+// // Main Portfolio
+// @import './components/portfolio';
 
-// Footer
-@import './components/page-footer';
+// // Footer
+// @import './components/page-footer';
