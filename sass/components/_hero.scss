@@ -1,31 +1,44 @@
 // Hero section
 .hero {
-    max-width: 1600px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: $bgr-secondary-color;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-bg-480.jpg');
+
+    @media screen and (min-width:$desktop) {
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
     margin: auto;
     margin-bottom: 30px;
-    max-width: 696px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
+    max-width: 360px;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
-    padding: 10px 32px;
+    padding: 10px 24px;
 
     font-family: inherit;
     font-weight: 700;
@@ -39,4 +52,8 @@
     border-radius: 4px;
 
     cursor: pointer;
+
+    @media screen and (min-width:$desktop) {
+        padding: 10px 32px;
+    }
 }
