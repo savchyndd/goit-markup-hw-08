@@ -1,7 +1,9 @@
 // What we do section
 .we-do {
-    @include media(phone) {
-        display: none;
+    display: none;
+
+    @include media(desktop) {
+        display: block;
     }
 
 

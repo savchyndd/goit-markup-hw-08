@@ -11,9 +11,14 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/header-bg-480.jpg');
 
-    @media screen and (min-width:$desktop) {
-        padding: 200px 0;
+    @include media(tablet) {
+        max-width: 768px;
     }
+
+    // @media screen and (min-width:$desktop) {
+    //     padding: 200px 0;
+    // }
+
 }
 
 .hero__title {
@@ -29,12 +34,12 @@
     color: $white-color;
     max-width: 360px;
 
-    @media screen and (min-width: $desktop) {
-        max-width: 696px;
+    // @media screen and (min-width: $desktop) {
+    //     max-width: 696px;
 
-        font-size: 44px;
-        line-height: 1.36;
-    }
+    //     font-size: 44px;
+    //     line-height: 1.36;
+    // }
 }
 
 .hero__btn {
@@ -53,7 +58,7 @@
 
     cursor: pointer;
 
-    @media screen and (min-width:$desktop) {
-        padding: 10px 32px;
-    }
+    // @media screen and (min-width:$desktop) {
+    //     padding: 10px 32px;
+    // }
 }

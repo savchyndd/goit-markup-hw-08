@@ -1,36 +1,33 @@
 .feature__list {
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-        margin-left: calc(-1 * $card-feature-set-gap);
-        margin-top: calc(-1 * $card-feature-set-gap);
+    @include media(tablet-desktop) {
+        margin-left: calc(-1 * $card-set-gap);
+        margin-top: calc(-1 * $card-set-gap);
     }
-
 }
 
 .feature__item {
     max-width: 450px;
     margin: auto;
 
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @include media(tablet-desktop) {
         max-width: 354px;
 
-        flex-basis: calc(100% / 2 - $card-feature-set-gap);
-        margin-left: $card-feature-set-gap;
-        margin-top: $card-feature-set-gap;
+        flex-basis: calc(100% / 2 - $card-set-gap);
+        margin-left: $card-set-gap;
+        margin-top: $card-set-gap;
     }
-
-
 }
 
 .feature__icon-wrapper {
@@ -46,12 +43,13 @@
 }
 
 .feature__subtitle {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 10px;
 
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         text-align: center;
     }
 }

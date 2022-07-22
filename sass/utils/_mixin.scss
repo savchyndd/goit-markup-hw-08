@@ -3,31 +3,3 @@
     $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: $property $duration $timing-function;
 }
-
-@mixin adaptive($media) {
-    @if $media==mobile {
-        @media screen and (max-width: $mobile) {
-            @content;
-        }
-    }
-
-
-    @else if $media==tablet {
-        @media screen and (min-width: culc($mobile + 1px)) and (max-width: culc($desktop - 1px)) {
-            @content;
-        }
-    }
-
-    @else if $media==desktop {
-        @media screen and (min-width: $desktop) {
-            @content;
-        }
-    }
-
-    @else if $media==mintablet {
-        @media screen and (min-width: culc($mobile + 1px)) {
-            @content;
-        }
-    }
-
-}

@@ -6,12 +6,14 @@
 .page-header__container {
     display: flex;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
 
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
         justify-content: space-between;
     }
+
 }
 
 .logo {
@@ -21,10 +23,10 @@
     line-height: 1.17;
     color: $accent-color;
 
-    @media screen and (min-width:$desktop) {
-        font-size: 26px;
-        line-height: 1.2;
-    }
+    // @media screen and (min-width:$desktop) {
+    //     font-size: 26px;
+    //     line-height: 1.2;
+    // }
 }
 
 .logo--header {
@@ -32,28 +34,28 @@
 }
 
 .main-nav__list {
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         margin-bottom: 302px;
     }
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: flex;
         margin-left: 88px;
     }
 
-    @media screen and (min-width: $desktop) {
-        margin-left: 93px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //     margin-left: 93px;
+    // }
 }
 
 .main-nav__item {
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         &:not(:last-child) {
             margin-bottom: 32px;
         }
     }
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         position: relative;
 
         &:not(:last-child),
@@ -79,7 +81,7 @@
         color: $accent-color;
     }
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: block;
         padding: 32px 0;
         font-size: 14px;
@@ -105,17 +107,12 @@
 .contact-list {
     display: flex;
 
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         flex-direction: column-reverse;
         margin-bottom: 64px;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @include media(tablet-desktop) {
         flex-direction: column;
         justify-content: center;
     }
@@ -131,23 +128,25 @@
 
     color: inherit;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-        margin-bottom: 10px;
+    @include media(tablet-desktop) {
+        font-size: 12px;
+        line-height: 1.16;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: center;
-
+    @include media(tablet) {
         font-size: 14px;
         line-height: 1.14;
     }
 
-    @media screen and (min-width: $desktop) {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
+    // @media screen and (min-width: $desktop) {
+    //     &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+    // }
 }
 
 .contact-list__link {
@@ -160,7 +159,7 @@
 }
 
 .contact-list__item--mobile-size {
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         font-size: 24px;
         line-height: 1.16;
         margin-top: 32px;
@@ -171,7 +170,7 @@
     margin-right: 10px;
     fill: currentColor;
 
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         display: none;
     }
 }
@@ -179,7 +178,7 @@
 .main-social__list {
     display: flex;
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: none;
     }
 }
@@ -226,7 +225,7 @@
         fill: $accent-color;
     }
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: none;
     }
 }
@@ -247,8 +246,7 @@
 }
 
 .menu-container {
-
-    @media screen and (max-width: $tablet) {
+    @include media(mobile) {
         position: fixed;
         z-index: 1;
         top: 0;
@@ -258,17 +256,16 @@
 
         padding: 48px 40px;
         background-color: $white-color;
+
+        display: none;
     }
 
     &.is-open {
         display: block;
     }
 
-    @media screen and (max-width: $tablet) {
-        display: none;
-    }
 
-    @media screen and (min-width: $tablet) {
+    @include media(tablet) {
         display: flex;
         justify-content: space-between;
         width: 100%;

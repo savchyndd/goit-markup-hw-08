@@ -20,11 +20,17 @@ img {
 .section {
     padding: 60px 0;
 
-    // padding: 94px 0;
+    @include media(desktop) {
+        padding: 94px 0;
+    }
 }
 
 .container {
     max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
+
+    @include media(tablet) {
+        max-width: 768px;
+    }
 }

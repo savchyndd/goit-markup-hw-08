@@ -8,12 +8,18 @@
 .page-footer__container {
     text-align: center;
 
-    // display: flex;
+    @include media(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     // align-items: baseline;
 }
 
 .page-footer__address-wrapper {
     margin-bottom: 60px;
+
     // margin-right: 70px;
 }
 
