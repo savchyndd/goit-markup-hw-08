@@ -24,13 +24,11 @@
 }
 
 .logo--footer {
-    margin-bottom: 20px;
-
     color: $white-color;
 }
 
 .address__list {
-    // margin-top: 20px;
+    margin-top: 20px;
 }
 
 .address__item {
@@ -55,9 +53,6 @@
 }
 
 .address__link--location {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
     color: $white-color;
 }
 
@@ -79,7 +74,6 @@
 }
 
 .page-footer__social {
-
     fill: $white-color;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -94,8 +88,8 @@
 
 /* Newsletter wrapper */
 .page-footer__newsletter-wrapper {
-    // margin-left: auto;
     max-width: 450px;
+    // margin-left: auto;
 }
 
 .newsletter__title {

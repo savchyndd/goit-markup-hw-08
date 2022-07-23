@@ -1061,8 +1061,11 @@ img {
 }
 
 .logo--footer {
-  margin-bottom: 20px;
   color: #ffffff;
+}
+
+.address__list {
+  margin-top: 20px;
 }
 
 .address__item:not(:last-child) {
@@ -1083,9 +1086,6 @@ img {
 }
 
 .address__link--location {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
   color: #ffffff;
 }
 
