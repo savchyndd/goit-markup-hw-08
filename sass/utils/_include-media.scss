@@ -1,6 +1,18 @@
 @mixin media($size) {
-    @if $size==mobile {
+    @if $size==max-mobile {
+        @media screen and (max-width: calc($mobile)) {
+            @content ;
+        }
+    }
+
+    @else if $size==mobile {
         @media screen and (max-width: calc($tablet)) {
+            @content ;
+        }
+    }
+
+    @else if $size==min-mobile {
+        @media screen and (min-width: calc($mobile)) {
             @content ;
         }
     }

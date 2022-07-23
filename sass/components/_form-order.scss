@@ -127,8 +127,8 @@
     }
 
     // доробити
-    // .form-order__privacy-imput:hover &,
-    // .form-order__privacy-imput:focus & {
+    // .form-order__privacy-imput:hover+&,
+    // .form-order__privacy-imput:focus+& {
 
     // }
 
@@ -148,7 +148,8 @@
     justify-content: center;
 
     margin: 0 auto;
-    padding: 10px 55px;
+    padding: 10px 52px;
+    // padding: 10px 55px;
 
     font-weight: 700;
     line-height: 1.88;

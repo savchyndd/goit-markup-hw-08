@@ -5,10 +5,18 @@
 }
 
 .filter__list {
-    display: inline-flex;
-    flex-wrap: wrap;
-    // justify-content: center;
-    max-width: 326px;
+    display: flex;
+    margin-bottom: 40px;
+
+    @include media(mobile) {
+        flex-wrap: wrap;
+        max-width: 326px;
+    }
+
+    @include media(tablet) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
 
 .filter__item {
@@ -16,12 +24,14 @@
         margin-right: 8px;
     }
 
-    &:nth-last-child(3n) {
-        margin-right: 0px;
-    }
+    @include media (mobile) {
+        &:nth-last-child(3n) {
+            margin-right: 0px;
+        }
 
-    &:nth-last-child(n+3) {
-        margin-bottom: 15px;
+        &:nth-last-child(n+3) {
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -52,25 +62,37 @@
 }
 
 .preview__list {
-    margin-top: 40px;
+    @include media(tablet) {
+        margin-top: 30px;
 
-    // display: flex;
-    // flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
 
-    // margin-left: calc(-1 * $card-set-gap);
-    // margin-top: calc(-1 * $card-set-gap);
+        margin-left: calc(-1 * $card-set-gap);
+        margin-top: calc(-1 * $card-set-gap);
+    }
+
 }
 
 .preview__item {
     max-width: 450px;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @include media(mobile) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
-    // flex-basis: calc(100% / 3 - $card-set-gap);
-    // margin-left: $card-set-gap;
-    // margin-top: $card-set-gap;
+    @include media(tablet) {
+        max-width: 354px;
+        flex-basis: calc(100% / 2 - $card-set-gap);
+        margin-left: $card-set-gap;
+        margin-top: $card-set-gap;
+    }
+
+    @include media(desktop) {
+        flex-basis: calc(100% / 3 - $card-set-gap);
+    }
 }
 
 .preview__link {
@@ -118,7 +140,6 @@
     width: 100%;
     height: 100%;
     padding: 77px 24px;
-    // padding: 63px 24px;
 
     font-size: 18px;
     line-height: 1.56;
@@ -130,5 +151,15 @@
 
     .preview__link:hover & {
         transform: translateY(0);
+    }
+
+    @include media(tablet) {
+        padding-top: 49px;
+        padding-bottom: 49px;
+    }
+
+    @include media(desktop) {
+        padding-top: 63px;
+        padding-bottom: 63px;
     }
 }
