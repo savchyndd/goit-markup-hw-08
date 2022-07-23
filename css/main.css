@@ -75,6 +75,11 @@ img {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .container {
+    min-width: 1200px;
+  }
+}
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -105,6 +110,12 @@ img {
   line-height: 1.17;
   color: #2196f3;
 }
+@media screen and (min-width: 1600px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
 
 .logo--header {
   color: #000000;
@@ -121,6 +132,11 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-nav__list {
+    margin-left: 93px;
   }
 }
 
@@ -196,6 +212,11 @@ img {
             justify-content: center;
   }
 }
+@media screen and (min-width: 1600px) {
+  .contact-list {
+    margin-left: auto;
+  }
+}
 
 .contact-list__item {
   font-weight: 500;
@@ -213,10 +234,13 @@ img {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
   .contact-list__item {
     font-size: 14px;
     line-height: 1.14;
+  }
+  .contact-list__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -308,6 +332,9 @@ img {
   display: block;
 }
 
+.menu-container {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .menu-container {
     position: fixed;
@@ -318,21 +345,27 @@ img {
     height: 100%;
     padding: 48px 40px;
     background-color: #ffffff;
-    display: none;
+  }
+  .menu-container.is-open {
+    display: block;
   }
 }
-.menu-container.is-open {
-  display: block;
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .menu-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -352,6 +385,12 @@ img {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .hero {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   margin: auto;
@@ -363,6 +402,13 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   max-width: 360px;
+}
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {

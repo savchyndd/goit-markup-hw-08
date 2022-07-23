@@ -15,9 +15,10 @@
         max-width: 768px;
     }
 
-    // @media screen and (min-width:$desktop) {
-    //     padding: 200px 0;
-    // }
+    @include media(desktop) {
+        max-width: 1600px;
+        padding: 200px 0;
+    }
 
 }
 
@@ -34,12 +35,12 @@
     color: $white-color;
     max-width: 360px;
 
-    // @media screen and (min-width: $desktop) {
-    //     max-width: 696px;
+    @include media(desktop) {
+        max-width: 696px;
 
-    //     font-size: 44px;
-    //     line-height: 1.36;
-    // }
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {

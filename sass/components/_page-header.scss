@@ -23,10 +23,10 @@
     line-height: 1.17;
     color: $accent-color;
 
-    // @media screen and (min-width:$desktop) {
-    //     font-size: 26px;
-    //     line-height: 1.2;
-    // }
+    @include media(desktop) {
+        font-size: 26px;
+        line-height: 1.2;
+    }
 }
 
 .logo--header {
@@ -43,9 +43,9 @@
         margin-left: 88px;
     }
 
-    // @media screen and (min-width: $desktop) {
-    //     margin-left: 93px;
-    // }
+    @include media(desktop) {
+        margin-left: 93px;
+    }
 }
 
 .main-nav__item {
@@ -117,6 +117,9 @@
         justify-content: center;
     }
 
+    @include media(desktop) {
+        margin-left: auto;
+    }
 }
 
 .contact-list__item {
@@ -137,16 +140,15 @@
         }
     }
 
-    @include media(tablet) {
+    @include media(desktop) {
         font-size: 14px;
         line-height: 1.14;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
-    // @media screen and (min-width: $desktop) {
-    //     &:not(:last-child) {
-    //         margin-right: 30px;
-    //     }
-    // }
 }
 
 .contact-list__link {
@@ -257,17 +259,22 @@
         padding: 48px 40px;
         background-color: $white-color;
 
-        display: none;
+
+
+        &.is-open {
+            display: block;
+        }
     }
 
-    &.is-open {
-        display: block;
-    }
+    display: none;
 
+    @include media(tablet-desktop) {
+        justify-content: space-between;
+    }
 
     @include media(tablet) {
         display: flex;
-        justify-content: space-between;
         width: 100%;
+        align-items: center;
     }
 }

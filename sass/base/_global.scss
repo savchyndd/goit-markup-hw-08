@@ -33,4 +33,8 @@ img {
     @include media(tablet) {
         max-width: 768px;
     }
+
+    @include media(desktop) {
+        min-width: 1200px;
+    }
 }
