@@ -304,6 +304,11 @@ img {
 .main-social__item:not(:first-child) {
   padding-left: 10px;
 }
+@media screen and (max-width: 480px) {
+  .main-social__item {
+    margin-bottom: 10px;
+  }
+}
 
 .main-social__link {
   font-weight: 500;
@@ -871,8 +876,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    min-width: 0px;
+    min-height: 0px;
   }
 }
 @media screen and (min-width: 480px) {

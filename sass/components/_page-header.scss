@@ -201,6 +201,10 @@
     &:not(:first-child) {
         padding-left: 10px;
     }
+
+    @include media(max-mobile) {
+        margin-bottom: 10px;
+    }
 }
 
 .main-social__link {

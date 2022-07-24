@@ -34,8 +34,8 @@
     border-radius: 4px;
 
     @include media(max-mobile) {
-        max-width: 450px;
-        max-height: 609px;
+        min-width: 0px;
+        min-height: 0px;
     }
 
     @include media(min-mobile) {
