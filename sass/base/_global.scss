@@ -6,6 +6,11 @@ body {
     letter-spacing: 0.03em;
 }
 
+body.modal-open,
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
 h2,
 h3 {
     color: $header-color;

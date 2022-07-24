@@ -183,6 +183,10 @@
 .main-social__list {
     display: flex;
 
+    @include media(max-mobile) {
+        flex-wrap: wrap;
+    }
+
     @include media(tablet) {
         display: none;
     }
@@ -262,7 +266,7 @@
         padding: 48px 40px;
         background-color: $white-color;
 
-
+        overflow-y: scroll;
 
         &.is-open {
             display: block;
