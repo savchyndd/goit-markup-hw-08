@@ -1,13 +1,18 @@
 .feature__list {
     @include media(tablet) {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     @include media(tablet-desktop) {
+        flex-wrap: wrap;
+        justify-content: center;
+
         margin-left: calc(-1 * $card-set-gap);
         margin-top: calc(-1 * $card-set-gap);
+    }
+
+    @include media(desktop) {
+        justify-content: space-between;
     }
 }
 
@@ -27,6 +32,11 @@
         flex-basis: calc(100% / 2 - $card-set-gap);
         margin-left: $card-set-gap;
         margin-top: $card-set-gap;
+    }
+
+    @include media(desktop) {
+        max-width: 270px;
+        margin-top: 0;
     }
 }
 

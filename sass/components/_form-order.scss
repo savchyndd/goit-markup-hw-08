@@ -37,6 +37,11 @@
     &:focus {
         border-color: $accent-color;
     }
+
+    @include media(desktop) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
 }
 
 .form-order__icon {
@@ -92,6 +97,11 @@
 
     font-size: 12px;
     line-height: 1.17;
+
+    @include media(desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form-order__privacy-imput {
@@ -149,7 +159,6 @@
 
     margin: 0 auto;
     padding: 10px 52px;
-    // padding: 10px 55px;
 
     font-weight: 700;
     line-height: 1.88;
@@ -161,4 +170,9 @@
     border-radius: 4px;
 
     cursor: pointer;
+
+    @include media(desktop) {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
 }

@@ -2,6 +2,11 @@
 .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include media(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .filter__list {
@@ -16,6 +21,10 @@
     @include media(tablet) {
         justify-content: center;
         margin-bottom: 30px;
+    }
+
+    @include media(desktop) {
+        margin-bottom: 50px;
     }
 }
 
@@ -72,6 +81,10 @@
         margin-top: calc(-1 * $card-set-gap);
     }
 
+    @include media(desktop) {
+        margin-top: 50px;
+    }
+
 }
 
 .preview__item {
@@ -91,11 +104,15 @@
     }
 
     @include media(desktop) {
+        max-width: 370px;
+
         flex-basis: calc(100% / 3 - $card-set-gap);
     }
 }
 
+
 .preview__link {
+    display: block;
 
     @include transition(box-shadow);
 

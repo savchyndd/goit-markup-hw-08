@@ -40,6 +40,11 @@
         min-width: 450px;
         min-height: 609px;
     }
+
+    @include media(desktop) {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal__close-btn {

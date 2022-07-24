@@ -1,13 +1,11 @@
 // What we do section
 .we-do {
     display: none;
+    padding-top: 0;
 
     @include media(desktop) {
         display: block;
     }
-
-
-    padding-top: 0;
 }
 
 .we-do__title {

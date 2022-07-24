@@ -58,8 +58,7 @@
     @include media(tablet) {
         position: relative;
 
-        &:not(:last-child),
-        .contact-list__item:not(:last-child) {
+        &:not(:last-child) {
             margin-right: 50px;
         }
     }
@@ -131,6 +130,7 @@
 
     color: inherit;
 
+
     @include media(tablet-desktop) {
         font-size: 12px;
         line-height: 1.16;
@@ -141,6 +141,9 @@
     }
 
     @include media(desktop) {
+        display: flex;
+        align-items: center;
+
         font-size: 14px;
         line-height: 1.14;
 

@@ -6,21 +6,32 @@
 }
 
 .page-footer__container {
-    text-align: center;
+    @include media(max-desktop) {
+        text-align: center;
+    }
 
-    @include media(tablet) {
-        display: flex;
+    @include media(tablet-desktop) {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    // align-items: baseline;
+    @include media(tablet) {
+        display: flex;
+    }
+
+    @include media(desktop) {
+        align-items: baseline;
+    }
 }
 
 .page-footer__address-wrapper {
-    margin-bottom: 60px;
+    @include media(max-desktop) {
+        margin-bottom: 60px;
+    }
 
-    // margin-right: 70px;
+    @include media(desktop) {
+        margin-right: 70px;
+    }
 }
 
 .logo--footer {
@@ -34,6 +45,10 @@
 .address__item {
     &:not(:last-child) {
         margin-bottom: 8px;
+
+        @include media(desktop) {
+            margin-bottom: 9px;
+        }
     }
 }
 
@@ -58,7 +73,9 @@
 
 /* Social wrapper */
 .page-footer__social-wrapper {
-    margin-bottom: 60px;
+    @include media(max-desktop) {
+        margin-bottom: 60px;
+    }
 }
 
 .page-footer__social-title {
@@ -88,8 +105,13 @@
 
 /* Newsletter wrapper */
 .page-footer__newsletter-wrapper {
-    max-width: 450px;
-    // margin-left: auto;
+    @include media(max-desktop) {
+        max-width: 450px;
+    }
+
+    @include media(desktop) {
+        margin-left: auto;
+    }
 }
 
 .newsletter__title {
@@ -105,17 +127,17 @@
 
 .newsletter__form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    @include media(max-desktop) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .newsletter__input {
     width: 100%;
     height: 50px;
     padding: 15px 16px;
-
-    margin-bottom: 20px;
-    // margin-right: 12px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -133,6 +155,15 @@
     &:hover,
     &:focus {
         border-color: $accent-color;
+    }
+
+    @include media(max-desktop) {
+        margin-bottom: 20px;
+    }
+
+    @include media(desktop) {
+        width: 358px;
+        margin-right: 12px;
     }
 }
 
@@ -162,4 +193,8 @@
 .newsletter__icon-btn {
     margin-left: 12px;
     fill: $white-color;
+
+    @include media(desktop) {
+        margin-left: 10px;
+    }
 }
