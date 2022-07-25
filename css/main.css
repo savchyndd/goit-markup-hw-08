@@ -205,7 +205,7 @@ img {
     margin-bottom: 64px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .contact-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -229,7 +229,7 @@ img {
   letter-spacing: 0.02em;
   color: inherit;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .contact-list__item {
     font-size: 12px;
     line-height: 1.16;
@@ -372,7 +372,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .menu-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -496,7 +496,7 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .feature__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -524,7 +524,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .feature__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -661,7 +661,7 @@ img {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .member__list {
     margin-left: -30px;
     margin-top: -30px;
@@ -689,7 +689,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .member__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -830,7 +830,7 @@ img {
         flex-basis: calc(50% - 30px);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .client__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);
@@ -1336,7 +1336,7 @@ img {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .page-footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

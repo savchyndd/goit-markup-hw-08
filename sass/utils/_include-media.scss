@@ -1,18 +1,18 @@
 @mixin media($size) {
     @if $size==max-mobile {
-        @media screen and (max-width: calc($mobile)) {
+        @media screen and (max-width: $mobile) {
             @content ;
         }
     }
 
     @else if $size==mobile {
-        @media screen and (max-width: calc($tablet)) {
+        @media screen and (max-width: $tablet) {
             @content ;
         }
     }
 
     @else if $size==min-mobile {
-        @media screen and (min-width: calc($mobile)) {
+        @media screen and (min-width: $mobile) {
             @content ;
         }
     }
@@ -24,7 +24,7 @@
     }
 
     @else if $size==tablet-desktop {
-        @media screen and (min-width: calc($tablet)) and (max-width: calc($desktop - 1px)) {
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
             @content ;
         }
     }
