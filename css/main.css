@@ -703,6 +703,10 @@ img {
   }
 }
 
+.member__img {
+  width: 100%;
+}
+
 .member__text {
   padding: 30px 0 24px 0;
 }
@@ -1278,6 +1282,10 @@ img {
 .preview__thumb-img {
   position: relative;
   overflow: hidden;
+}
+
+.preview__img {
+  width: 100%;
 }
 
 .preview__desc-overlay {
