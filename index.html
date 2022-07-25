@@ -154,7 +154,11 @@
             <li class="we-do__item">
               <div class="we-do__thumb">
                 <img
-                  src="./images/code.jpg"
+                  srcset="
+                    ./images/we-do/code-desktop-370.jpg         1x,
+                    ./images/we-do/we-do@2x/code-desktop@2x.jpg 2x
+                  "
+                  src="./images/we-do/code-desktop-370.jpg"
                   alt="Робота з комп'ютером"
                   width="370"
                   height="294"
@@ -166,7 +170,11 @@
             <li class="we-do__item">
               <div class="we-do__thumb">
                 <img
-                  src="./images/phone.jpg"
+                  srcset="
+                    ./images/we-do/phone-desktop-370.jpg         1x,
+                    ./images/we-do/we-do@2x/phone-desktop@2x.jpg 2x
+                  "
+                  src="./images/we-do/phone-desktop-370.jpg"
                   alt="Презентація на ноутбуці"
                   width="370"
                   height="294"
@@ -178,7 +186,11 @@
             <li class="we-do__item">
               <div class="we-do__thumb">
                 <img
-                  src="./images/tablet.jpg"
+                  srcset="
+                    ./images/we-do/tablet-desktop-370.jpg         1x,
+                    ./images/we-do/we-do@2x/tablet-desktop@2x.jpg 2x
+                  "
+                  src="./images/we-do/tablet-desktop-370.jpg"
                   alt="Палітра кольорів на планшеті"
                   width="370"
                   height="294"
@@ -197,13 +209,36 @@
           <h2 class="member__title">Наша команда</h2>
           <ul class="member__list">
             <li class="member__item">
-              <img
-                src="./images/demyanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-                class="member__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/demyanenko-mobile-450.jpg            1x,
+                    ./images/our-team/our-team@2x/demyanenko-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/demyanenko-tablet-354.jpg            1x,
+                    ./images/our-team/our-team@2x/demyanenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/demyanenko-desktop-270.jpg            1x,
+                    ./images/our-team/our-team@2x/demyanenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <img
+                  src="./images/our-team/demyanenko-desktop-270.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                  class="member__img"
+                />
+              </picture>
               <div class="member__text">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
                 <p class="member__profession" lang="en">Product Designer</p>
@@ -261,13 +296,36 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/repina.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-                class="member__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/repina-mobile-450.jpg            1x,
+                    ./images/our-team/our-team@2x/repina-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/repina-tablet-354.jpg            1x,
+                    ./images/our-team/our-team@2x/repina-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/repina-desktop-270.jpg            1x,
+                    ./images/our-team/our-team@2x/repina-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <img
+                  src="./images/our-team/repina-desktop-270.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                  height="260"
+                  class="member__img"
+                />
+              </picture>
               <div class="member__text">
                 <h3 class="member__name">Ольга Рєпіна</h3>
                 <p class="member__profession" lang="en">Frontend Developer</p>
@@ -324,13 +382,36 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/tarasov.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-                class="member__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/tarasov-mobile-450.jpg            1x,
+                    ./images/our-team/our-team@2x/tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tarasov-tablet-354.jpg            1x,
+                    ./images/our-team/our-team@2x/tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/tarasov-desktop-270.jpg            1x,
+                    ./images/our-team/our-team@2x/tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <img
+                  src="./images/our-team/tarasov-desktop-270.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                  height="260"
+                  class="member__img"
+                />
+              </picture>
               <div class="member__text">
                 <h3 class="member__name">Микола Тарасов</h3>
                 <p class="member__profession" lang="en">Marketing</p>
@@ -387,13 +468,36 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/ermakov.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-                class="member__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/ermakov-mobile-450.jpg            1x,
+                    ./images/our-team/our-team@2x/ermakov-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/ermakov-tablet-354.jpg            1x,
+                    ./images/our-team/our-team@2x/ermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/ermakov-desktop-270.jpg            1x,
+                    ./images/our-team/our-team@2x/ermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <img
+                  src="./images/our-team/ermakov-desktop-270.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                  class="member__img"
+                />
+              </picture>
               <div class="member__text">
                 <h3 class="member__name">Михайло Єрмаков</h3>
                 <p class="member__profession" lang="en">UI Designer</p>
