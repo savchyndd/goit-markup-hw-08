@@ -205,7 +205,7 @@ img {
     margin-bottom: 64px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .contact-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -229,7 +229,7 @@ img {
   letter-spacing: 0.02em;
   color: inherit;
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .contact-list__item {
     font-size: 12px;
     line-height: 1.16;
@@ -372,7 +372,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .menu-container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -496,7 +496,7 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .feature__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -524,7 +524,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .feature__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -652,7 +652,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .member__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -661,7 +661,7 @@ img {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .member__list {
     margin-left: -30px;
     margin-top: -30px;
@@ -689,7 +689,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .member__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -795,7 +795,7 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .client__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -830,14 +830,14 @@ img {
         flex-basis: calc(50% - 30px);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .client__item {
     max-width: 354px;
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);
         flex-basis: calc(33.3333333333% - 30px);
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .client__item {
     margin-left: 30px;
     margin-top: 30px;
@@ -1331,12 +1331,12 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .page-footer__container {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .page-footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1359,7 +1359,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .page-footer__address-wrapper {
     margin-bottom: 60px;
   }
@@ -1405,7 +1405,7 @@ img {
 }
 
 /* Social wrapper */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .page-footer__social-wrapper {
     margin-bottom: 60px;
   }
@@ -1433,7 +1433,7 @@ img {
 }
 
 /* Newsletter wrapper */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .page-footer__newsletter-wrapper {
     max-width: 450px;
   }
@@ -1458,7 +1458,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .newsletter__form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1487,7 +1487,7 @@ img {
 .newsletter__input:hover, .newsletter__input:focus {
   border-color: #2196f3;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .newsletter__input {
     margin-bottom: 20px;
   }

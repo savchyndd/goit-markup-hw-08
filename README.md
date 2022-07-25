@@ -2,10 +2,10 @@
 
 Виконано верстку адаптивної версії усіх сторінок та елементів макета.
 
-#Баг:
+#Bugs:
 
-Page-header на 768px, 1599px;
+Page-header on 768px, 1599px;
 
-Clients на 1600px;
+Our-teams on 768>767>766 px;
 
-Page-footer на 1599px;
+All styles on 1599px;

@@ -24,13 +24,13 @@
     }
 
     @else if $size==tablet-desktop {
-        @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
             @content ;
         }
     }
 
     @else if $size==max-desktop {
-        @media screen and (max-width: $desktop) {
+        @media screen and (max-width: calc($desktop - 1px)) {
             @content ;
         }
     }
