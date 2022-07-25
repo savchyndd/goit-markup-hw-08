@@ -7,6 +7,7 @@
     background-color: $bgr-secondary-color;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     @include media(tablet) {
         max-width: 768px;

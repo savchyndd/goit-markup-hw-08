@@ -399,6 +399,7 @@ img {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .hero {
