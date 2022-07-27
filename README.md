@@ -4,8 +4,8 @@
 
 #Bugs:
 
-Page-header on 768px, 1599px;
+Page-header on 768px, 1199px;
 
 Our-teams on 768>767>766 px;
 
-All styles on 1599px;
+All styles on 1199px;
