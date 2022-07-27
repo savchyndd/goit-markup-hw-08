@@ -22,7 +22,7 @@
 
 @include media(mobile) {
     .hero {
-        background-image: $bg-gradient, url('../../images/hero-bg/header-bg-mobile-480.jpg');
+        background-image: $bg-gradient, url('../images/hero-bg/header-bg-mobile-480.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -30,14 +30,14 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: $bg-gradient, url('../../images/hero-bg/hero-bg@2x/header-bg-mobile@2x.jpg');
+            background-image: $bg-gradient, url('../images/hero-bg/hero-bg@2x/header-bg-mobile@2x.jpg');
         }
     }
 }
 
 @include media(tablet) {
     .hero {
-        background-image: $bg-gradient, url('../../images/hero-bg/header-bg-tablet-768.jpg');
+        background-image: $bg-gradient, url('../images/hero-bg/header-bg-tablet-768.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -45,14 +45,14 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: $bg-gradient, url('../../images/hero-bg/hero-bg@2x/header-bg-tablet@2x.jpg');
+            background-image: $bg-gradient, url('../images/hero-bg/hero-bg@2x/header-bg-tablet@2x.jpg');
         }
     }
 }
 
 @include media(desktop) {
     .hero {
-        background-image: $bg-gradient, url('../../images/hero-bg/header-bg-desktop-1600.jpg');
+        background-image: $bg-gradient, url('../images/hero-bg/header-bg-desktop-1600.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -60,7 +60,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: $bg-gradient, url('../../images/hero-bg/hero-bg@2x/header-bg-desktop@2x.jpg');
+            background-image: $bg-gradient, url('../images/hero-bg/hero-bg@2x/header-bg-desktop@2x.jpg');
         }
     }
 }

@@ -33,11 +33,11 @@
     color: $black-color;
 }
 
-.main-nav__list {
-    @include media(mobile) {
-        margin-bottom: 302px;
-    }
+.main-nav {
+    // margin-bottom: auto;
+}
 
+.main-nav__list {
     @include media(tablet) {
         display: flex;
         margin-left: 88px;
@@ -108,7 +108,7 @@
 
     @include media(mobile) {
         flex-direction: column-reverse;
-        margin-bottom: 64px;
+        // margin-bottom: 64px;
     }
 
     @include media(tablet-desktop) {
@@ -182,6 +182,7 @@
 
 .main-social__list {
     display: flex;
+    align-items: flex-end;
 
     @include media(max-mobile) {
         flex-wrap: wrap;
@@ -267,14 +268,18 @@
         width: 100%;
         height: 100%;
 
+        flex-wrap: wrap;
+
+
         padding: 48px 40px;
         background-color: $white-color;
 
         overflow-y: scroll;
 
         &.is-open {
-            display: block;
+            display: flex;
         }
+
     }
 
     display: none;
